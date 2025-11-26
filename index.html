@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmacia Frontera+ | Envíos a Domicilio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+            <img src="img/logof4.png" alt="Farmacia Frontera+">
+            </a>
+            <nav class="nav">
+                <a href="#catalogo">Catálogo</a>
+                <a href="#envio">Calcular Envío</a>
+                <a href="#ubicacion-contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Medicinas a domicilio en minutos</h2>
+            <p>Consulta el costo de tu envío con nuestro simulador inteligente.</p>
+            <a href="#envio" class="btn-hero">Calcular Envío</a>
+        </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="catalogo">
+        <h2>Categorías</h2>
+
+        <div class="categorias">
+            <div class="categoria">
+                <h3>Analgésicos</h3>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn left">&#10094;</button>
+
+                    <div class="carousel-track">
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Paracetamol">
+                            <h4>Paracetamol 500mg</h4>
+                            <p>$18 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Ibuprofeno">
+                            <h4>Ibuprofeno 400mg</h4>
+                            <p>$25 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Aspirina">
+                            <h4>Aspirina 500mg</h4>
+                            <p>$55 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Naproxeno">
+                            <h4>Naproxeno 250mg</h4>
+                            <p>$35 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Diclofenaco">
+                            <h4>Diclofenaco 100mg</h4>
+                            <p>$35 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Tramadol">
+                            <h4>Tramadol 100mg</h4>
+                            <p>$25 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-btn right">&#10095;</button>
+                </div>
+            </div>
+
+
+            <div class="categoria">
+                <h3>Antigripales</h3>
+
+                    <div class="carousel-container">
+                    <button class="carousel-btn left">&#10094;</button>
+
+                    <div class="carousel-track">
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Fenilefrina">
+                            <h4>Fenilefrina 100mg</h4>
+                            <p>$20 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Dextrometorfano">
+                            <h4>Dextrometorfano 500mg</h4>
+                            <p>$55 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Clorfenamina">
+                            <h4>Clorfenamina 200mg</h4>
+                            <p>$35 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Difenhidramina">
+                            <h4>Difenhidramina 250mg</h4>
+                            <p>$28 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Amantadina">
+                            <h4>Amantadina 300mg</h4>
+                            <p>$37 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Guaifenesina">
+                            <h4>Guaifenesina 100mg</h4>
+                            <p>$25 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-btn right">&#10095;</button>
+                </div>
+
+            </div>
+
+            <div class="categoria">
+                <h3>Vitaminas</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn left">&#10094;</button>
+
+                    <div class="carousel-track">
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Vitamina C">
+                            <h4>Vitamina C 1000mg</h4>
+                            <p>$60 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Vitamina K">
+                            <h4>Vitamina K 500mg</h4>
+                            <p>$55 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Vitamina D">
+                            <h4>Vitamina D 600mg</h4>
+                            <p>$55 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Complejo B">
+                            <h4>Complejo B 650mg</h4>
+                            <p>$28 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Vitamina E">
+                            <h4>Vitamina E 500mg</h4>
+                            <p>$57 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/imgProd.png" alt="Vitamina A">
+                            <h4>Vitamina A 200mg</h4>
+                            <p>$50 MXN</p>
+                            <a href="#" class="btn-wsp">Ordenar</a>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-btn right">&#10095;</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SIMULADOR DE ENVIO -->
+    <section id="envio" class="envio">
+        <h2>Simulador de Costo de Envío</h2>
+
+        <div class="simulador-container">
+
+            <!-- Inputs -->
+            <div class="simulador-form">
+
+                <label for="direccion">Ingresa tu dirección:</label>
+                <input type="text" id="direccion" placeholder="Ej. Av. Reforma 123, Tijuana">
+
+                <button id="btnUbicacion" class="btn-ubicacion">
+                    Usar mi ubicación actual
+                </button>
+
+                <button id="btnCalcular" class="btn-calcular">
+                    Calcular Envío
+                </button>
+            </div>
+
+            <!-- Resultados -->
+            <div class="simulador-resultados">
+
+                <h3>Resultados:</h3>
+
+                <p><strong>Distancia:</strong> <span id="resultadoDistancia">-- km</span></p>
+                <p><strong>Tiempo estimado:</strong> <span id="resultadoTiempo">-- min</span></p>
+                <p><strong>Costo de envío:</strong> <span id="resultadoCosto">$-- MXN</span></p>
+
+                <button id="btnRuta" class="btn-ruta">Mostrar ruta en el mapa</button>
+
+                <a id="btnWspPedido" class="btn-wsp" target="_blank">
+                    Pedir por WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <div id="mapa" class="mapa"></div>
+
+    </section>
+
+<section id="ubicacion-contacto" class="ubicacion-contacto">
+    <div class="contenedor-ubicacion-contacto">
+
+        <h2>Ubicación y Contacto</h2>
+
+        <div class="uc-grid">
+
+            <!-- Columna izquierda: textos -->
+            <div class="uc-info">
+
+                <div class="uc-box">
+                    <h3>Horarios</h3>
+                    <ul class="horarios">
+                        <li>Lunes - Viernes: 8 AM – 10 PM</li>
+                        <li>Sábado: 9 AM – 9 PM</li>
+                        <li>Domingo: 10 AM – 8 PM</li>
+                    </ul>
+                </div>
+
+                <div class="uc-box">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong> (664) 123-4567</p>
+                    <p><strong>WhatsApp:</strong> 664-987-6543</p>
+
+                    <a href="https://wa.me/526649876543" target="_blank" class="btn-wsp">
+                        Enviar mensaje por WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Columna derecha: mapa -->
+            <div class="uc-mapa">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.702725697136!2d-116.82624529676247!3d32.46067246603309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93e743f2e3bd7%3A0xbf19e069ae61d678!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tijuana!5e0!3m2!1ses!2smx!4v1763967466627!5m2!1ses!2smx"
+                 allowfullscreen="" 
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+                </iframe> 
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Farmacia Frontera+. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
