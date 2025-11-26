@@ -1,0 +1,438 @@
+/* ===========================
+      RESET
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===========================
+      COLORES PRINCIPALES
+=========================== */
+
+:root {
+  --primario: #0096C7;
+  --secundario: #023E8A;
+  --acento: #48CAE4;
+  --fondo: #f7f9fc;
+  --texto: #333;
+}
+
+/* ===========================
+      HEADER
+=========================== */
+
+.header {
+  background: var(--secundario);
+  color: white;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.logo img {
+  height: 80px; 
+  width: auto;    
+  display: block;
+}
+
+
+.nav a:hover {
+  color: var(--acento);
+}
+
+/* ===========================
+      HERO
+=========================== */
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("../img/herofarm.png") center/cover no-repeat;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 2.9rem;
+  margin-top: 30px;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+}
+
+.btn-hero {
+  background: white;
+  color: var(--secundario);
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.btn-hero:hover {
+  background: #e7faff;
+}
+
+/* ===========================
+      CATALOGO
+=========================== */
+
+.catalogo {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.catalogo h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secundario);
+}
+
+.categorias {
+  display: grid;
+  gap: 30px;
+}
+
+.categoria h3 {
+  color: var(--primario);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* ===========================
+      PRODUCTOS (CARRUSEL)
+=========================== */
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  overflow: visible;
+  justify-content: center;
+}
+
+.carousel-track {
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: auto;
+  transition: transform 0.3s ease;
+  scrollbar-width: none;
+  padding: 10px 40px;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD PRODUCTO */
+.producto {
+  min-width: 200px;
+  max-width: 200px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  scroll-snap-align: start;
+}
+
+.producto img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.producto h4 {
+  font-size: 1rem;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.producto p {
+  font-weight: bold;
+  color: var(--primario);
+  margin: 8px 0 12px 0;
+}
+
+.producto .btn-wsp {
+  margin-top: auto;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #25D366;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.producto .btn-wsp:hover {
+  background: #1db954;
+}
+
+/* Flechas */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--secundario);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.carousel-btn.left { 
+    left: -5px; }
+
+.carousel-btn.right { 
+    right: -5px; }
+
+.carousel-btn:hover { 
+    background: var(--primario); }
+
+/* ===========================
+      SIMULADOR
+=========================== */
+
+.envio {
+  background: #eef7ff;
+  padding: 50px 20px;
+}
+
+.envio h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secundario);
+}
+
+.simulador-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.simulador-form,
+.simulador-resultados {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.simulador-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+/* BOTONES */
+.btn-ubicacion,
+.btn-calcular,
+.btn-ruta {
+  width: 100%;
+  background: var(--primario);
+  color: white;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-ubicacion:hover,
+.btn-calcular:hover,
+.btn-ruta:hover {
+  background: var(--secundario);
+}
+
+/* MAPA */
+.mapa {
+  width: 80%;
+  height: 350px;
+  background: #ccc;
+  margin: 30px auto;
+  border-radius: 12px;
+
+}
+
+/* =====================================
+        UBICACIÓN + CONTACTO
+===================================== */
+
+.ubicacion-contacto {
+  background: #f0f7ff;
+  padding: 70px 20px;
+  margin-top: 50px;
+}
+
+.contenedor-ubicacion-contacto {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ubicacion-contacto h2 {
+  text-align: center;
+  color: var(--secundario);
+  margin-bottom: 40px;
+  font-size: 1.7rem;
+}
+
+/* Grid principal */
+.uc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Columna izquierda */
+.uc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.uc-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.uc-box h3 {
+  color: var(--secundario);
+  margin-bottom: 10px;
+}
+
+.uc-box p,
+.uc-box li {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.horarios {
+  padding-left: 20px;
+}
+
+.uc-mapa {
+  width: 100%;
+  height: 400px; /* <- altura ajustable */
+  background: #ddd;
+  border-radius: 12px;
+  overflow: hidden; /* <- importante para redondear el iframe */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.uc-mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .uc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uc-mapa {
+    height: 300px;
+  }
+}
+
+
+/* ===========================
+      FOOTER
+=========================== */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--secundario);
+  color: white;
+  margin-top: 40px;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .hero-content h2 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .nav { display: none; }
+}
